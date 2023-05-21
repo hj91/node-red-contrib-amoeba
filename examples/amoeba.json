@@ -1,0 +1,110 @@
+[
+    {
+        "id": "174b48e099b813bd",
+        "type": "tab",
+        "label": "Amoeba Simulator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "23e2b2de25a26215",
+        "type": "amoeba",
+        "z": "174b48e099b813bd",
+        "name": "First world",
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "880572de17ec02ea",
+                "30562d3c073f842a"
+            ]
+        ]
+    },
+    {
+        "id": "ad2bc227b2ae5a75",
+        "type": "inject",
+        "z": "174b48e099b813bd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 200,
+        "wires": [
+            [
+                "23e2b2de25a26215"
+            ]
+        ]
+    },
+    {
+        "id": "880572de17ec02ea",
+        "type": "debug",
+        "z": "174b48e099b813bd",
+        "name": "Amoeba 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 690,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "30562d3c073f842a",
+        "type": "amoeba",
+        "z": "174b48e099b813bd",
+        "name": "Second World",
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "649241fe783fb91e"
+            ]
+        ]
+    },
+    {
+        "id": "649241fe783fb91e",
+        "type": "debug",
+        "z": "174b48e099b813bd",
+        "name": "Amoeba 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 690,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f7d2d68fd8d57217",
+        "type": "comment",
+        "z": "174b48e099b813bd",
+        "name": "Sample of Amoeba Life Cycle",
+        "info": "Generate Random Data and test life generation simulations...\n\nThis module is part of Earth Dream Project",
+        "x": 260,
+        "y": 60,
+        "wires": []
+    }
+]
